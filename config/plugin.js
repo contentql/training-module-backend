@@ -1,4 +1,9 @@
 module.exports = ({ env }) => ({
+  "users-permissions": {
+    config: {
+      jwtSecret: env("ADMIN_JWT_SECRET"),
+    },
+  },
   graphql: {
     config: {
       endpoint: "/graphql",
@@ -8,6 +13,7 @@ module.exports = ({ env }) => ({
       amountLimit: 100,
       apolloServer: {
         tracing: false,
+        introspection: true,
       },
     },
   },
@@ -24,6 +30,19 @@ module.exports = ({ env }) => ({
         upload: {},
         uploadStream: {},
         delete: {},
+      },
+    },
+  },
+
+  email: {
+    config: {
+      provider: "sendgrid",
+      providerOptions: {
+        apiKey: env("SENDGRID_API_KEY"),
+      },
+      settings: {
+        defaultFrom: "akhil@contentql.io",
+        defaultReplyTo: "akhil@contentql.io",
       },
     },
   },
