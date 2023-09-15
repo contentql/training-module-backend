@@ -1,9 +1,35 @@
+import logo from "./extensions/logo.png";
+import favicon from "./extensions/favicon.png";
+
 const config = {
   locales: ["en"],
+  head: {
+    favicon: favicon,
+  },
+  auth: {
+    logo: logo,
+  },
+  menu: {
+    logo: logo,
+  },
+  tutorials: false,
+  notifications: {
+    release: false,
+  },
+  theme: {
+    colors: {
+      primary100: "#f6ecfc",
+      primary200: "#e0c1f4",
+      primary500: "#ac73e6",
+      primary600: "#9736e8",
+      primary700: "#8312d1",
+      danger700: "#b72b1a",
+    },
+  },
   translations: {
     en: {
       "Auth.form.button.login.strapi": "Log in via ContentQL",
-      "app.components.LeftMenu.navbrand.title": "ContentQL Dashboard",
+      "app.components.LeftMenu.navbrand.title": "Dashboard",
       "Auth.form.register.subtitle":
         "Credentials are only used to authenticate in ContentQL. All saved data will be stored in your database.",
       "Auth.form.welcome.subtitle": "Log in to your ContentQL account",
@@ -56,7 +82,7 @@ const config = {
 };
 
 const bootstrap = (app) => {
-  console.log(app);
+  // console.log(app);
 };
 
 export default {
