@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "config-sync import --yes && strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "cs": "config-sync"
