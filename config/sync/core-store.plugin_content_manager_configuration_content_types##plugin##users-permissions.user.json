@@ -147,6 +147,34 @@
           "sortable": true
         }
       },
+      "phone": {
+        "edit": {
+          "label": "phone",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "image": {
+        "edit": {
+          "label": "image",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "image",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -241,6 +269,16 @@
           },
           {
             "name": "role",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "phone",
+            "size": 4
+          },
+          {
+            "name": "image",
             "size": 6
           }
         ]

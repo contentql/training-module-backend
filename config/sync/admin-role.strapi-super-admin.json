@@ -202,7 +202,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "phone",
+          "image"
         ]
       },
       "conditions": []
@@ -226,7 +228,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "phone",
+          "image"
         ]
       },
       "conditions": []
@@ -244,7 +248,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "phone",
+          "image"
         ]
       },
       "conditions": []
