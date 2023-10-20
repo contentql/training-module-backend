@@ -132,6 +132,36 @@
           "sortable": true
         }
       },
+      "units": {
+        "edit": {
+          "label": "units",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "units",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "users": {
+        "edit": {
+          "label": "users",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "username"
+        },
+        "list": {
+          "label": "users",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -236,6 +266,16 @@
           },
           {
             "name": "image",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "units",
+            "size": 6
+          },
+          {
+            "name": "users",
             "size": 6
           }
         ]

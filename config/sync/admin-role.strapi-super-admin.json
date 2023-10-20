@@ -15,7 +15,9 @@
           "category",
           "time",
           "rating",
-          "image"
+          "image",
+          "units",
+          "users"
         ]
       },
       "conditions": []
@@ -44,7 +46,9 @@
           "category",
           "time",
           "rating",
-          "image"
+          "image",
+          "units",
+          "users"
         ]
       },
       "conditions": []
@@ -61,7 +65,57 @@
           "category",
           "time",
           "rating",
-          "image"
+          "image",
+          "units",
+          "users"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "username",
+          "products",
+          "stripeSessionToken"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::order.order",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::order.order",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "username",
+          "products",
+          "stripeSessionToken"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::order.order",
+      "properties": {
+        "fields": [
+          "username",
+          "products",
+          "stripeSessionToken"
         ]
       },
       "conditions": []
