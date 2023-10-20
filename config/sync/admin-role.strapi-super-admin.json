@@ -4,6 +4,123 @@
   "description": "Super Admins can access and manage all features and settings.",
   "permissions": [
     {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::course.course",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "price",
+          "priceId",
+          "category",
+          "time",
+          "rating",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::course.course",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::course.course",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::course.course",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "price",
+          "priceId",
+          "category",
+          "time",
+          "rating",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::course.course",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "price",
+          "priceId",
+          "category",
+          "time",
+          "rating",
+          "image"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::unit.unit",
+      "properties": {
+        "fields": [
+          "title",
+          "lesson.title",
+          "lesson.subtitle",
+          "lesson.time",
+          "lesson.content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::unit.unit",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::unit.unit",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::unit.unit",
+      "properties": {
+        "fields": [
+          "title",
+          "lesson.title",
+          "lesson.subtitle",
+          "lesson.time",
+          "lesson.content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::unit.unit",
+      "properties": {
+        "fields": [
+          "title",
+          "lesson.title",
+          "lesson.subtitle",
+          "lesson.time",
+          "lesson.content"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "admin::api-tokens.access",
       "subject": null,
       "properties": {},
