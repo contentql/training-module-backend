@@ -4,13 +4,46 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::order.order.create"
+    },
+    {
+      "action": "api::order.order.delete"
+    },
+    {
+      "action": "api::order.order.find"
+    },
+    {
+      "action": "api::order.order.findOne"
+    },
+    {
+      "action": "api::order.order.update"
+    },
+    {
       "action": "api::user-courses.user-courses.find"
     },
     {
       "action": "plugin::users-permissions.auth.changePassword"
     },
     {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.role.updateRole"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
+    },
+    {
+      "action": "plugin::users-permissions.user.findOne"
+    },
+    {
       "action": "plugin::users-permissions.user.me"
+    },
+    {
+      "action": "plugin::users-permissions.user.update"
     }
   ]
 }

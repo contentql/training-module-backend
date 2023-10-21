@@ -14,11 +14,13 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
 
     // retrieve item information
     const { products, username, email } = ctx.request.body;
-    console.log({ ctx });
+    console.log({ products });
     try {
       const lineItems = await Promise.all(
         products.map(async (product) => {
-          const item = await strapi.service("api::course.course").findOne(1);
+          const item = await strapi
+            .service("api::course.course")
+            .findOne(product.id);
 
           return {
             // price_data: {
