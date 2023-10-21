@@ -4,6 +4,9 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::user-courses.user-courses.find"
+    },
+    {
       "action": "plugin::users-permissions.auth.changePassword"
     },
     {

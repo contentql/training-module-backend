@@ -4,6 +4,51 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::course.course.create"
+    },
+    {
+      "action": "api::course.course.delete"
+    },
+    {
+      "action": "api::course.course.find"
+    },
+    {
+      "action": "api::course.course.findOne"
+    },
+    {
+      "action": "api::course.course.update"
+    },
+    {
+      "action": "api::order.order.create"
+    },
+    {
+      "action": "api::order.order.delete"
+    },
+    {
+      "action": "api::order.order.find"
+    },
+    {
+      "action": "api::order.order.findOne"
+    },
+    {
+      "action": "api::order.order.update"
+    },
+    {
+      "action": "api::unit.unit.create"
+    },
+    {
+      "action": "api::unit.unit.delete"
+    },
+    {
+      "action": "api::unit.unit.find"
+    },
+    {
+      "action": "api::unit.unit.findOne"
+    },
+    {
+      "action": "api::unit.unit.update"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {
